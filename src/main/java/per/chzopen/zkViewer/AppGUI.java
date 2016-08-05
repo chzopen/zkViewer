@@ -14,7 +14,7 @@ public class AppGUI
 {
 	private static void guiInit()
 	{
-		Font font = new Font("幼圆", Font.PLAIN, 18);
+		Font font = new Font("宋体", Font.PLAIN, 18);
         UIManager.put("Button.font",      font); 
         UIManager.put("Label.font",       font); 
         UIManager.put("TextField.font",   font); 
