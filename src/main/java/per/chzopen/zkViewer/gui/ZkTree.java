@@ -102,6 +102,10 @@ public class ZkTree extends JTree
 				try
 				{
 					selectedTreePath = _this.getPathForLocation(event.getX(), event.getY());
+					if( selectedTreePath==null )
+					{
+						return ;
+					}
 					TreeNode treeNode = (TreeNode) selectedTreePath.getLastPathComponent();
 					if( !(treeNode instanceof ZkTreeNode) )
 					{
